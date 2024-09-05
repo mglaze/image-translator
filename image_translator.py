@@ -4,7 +4,7 @@ import glob
 import json
 from google.cloud import vision
 from google.cloud import translate_v2 as translate
-from dotenv import load_dotenv
+from dotenv import load_dotenv # type: ignore
 
 # Load environment variables from .env file
 load_dotenv()

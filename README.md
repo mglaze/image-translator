@@ -49,7 +49,7 @@ pip install -r requirements.txt
 
 ## Usage
    ```bash
-   python image-translator.py <directory_path> [target_language]
+   python image_translator.py <directory_path> [target_language]
    ```
    - <directory_path>: The directory containing images (JPG/PNG).
    - [target_language]: (Optional) The language code to translate to (default is English: en).
@@ -64,7 +64,7 @@ pip install -r requirements.txt
 To translate all images in the /home/user/images folder to English:
 
   ```bash
-  python image-translator.py /home/user/images en
+  python image_translator.py /home/user/images en
   ```
 ## Example Image Processing Output
 
