@@ -1,3 +1,4 @@
 google-cloud-vision
 google-cloud-translate
 python-dotenv
+pytest

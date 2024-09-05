@@ -53,6 +53,11 @@ pip install -r requirements.txt
    ```
    - <directory_path>: The directory containing images (JPG/PNG).
    - [target_language]: (Optional) The language code to translate to (default is English: en).
+
+## Run Tests
+  ```bash
+   pytest -v
+  ```
   
 ### Example
 

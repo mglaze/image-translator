@@ -26,12 +26,12 @@ translate_client = translate.Client()
 def load_config():
     """Load configuration from config/settings.json."""
     config_path = os.path.join('config', 'settings.json')
-    if os.path.exists(config_path):
+    try:
         with open(config_path, 'r') as config_file:
             config = json.load(config_file)
             return config
-    else:
-        print(f"Configuration file not found at {config_path}")
+    except FileNotFoundError:
+        print(f"Configuration file not found: {config_path}")
         return {}
 
 def extract_text_from_image(image_path):
@@ -72,7 +72,7 @@ def process_images_in_directory(directory_path, target_language="en"):
     
     if not image_paths:
         print(f"No images found in directory: {directory_path}")
-        return
+        return {}  # Return an empty dictionary instead of None
     
     translations = {}
     
